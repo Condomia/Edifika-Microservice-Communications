@@ -1,4 +1,4 @@
-package com.edifika.communication.communication.domain.repositories;
+package com.edifika.communication.communication.infrastructure.persistence.jpa.repositories;
 
 import com.edifika.communication.communication.domain.model.entities.AnnouncementRead;
 import org.springframework.data.jpa.repository.JpaRepository;

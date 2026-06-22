@@ -1,8 +1,8 @@
-package com.edifika.communication.communication.internal.queryservices;
+package com.edifika.communication.communication.application.internal.queryservices;
 
 import com.edifika.communication.communication.domain.model.aggregates.Announcement;
-import com.edifika.communication.communication.domain.repositories.AnnouncementReadRepository;
-import com.edifika.communication.communication.domain.repositories.AnnouncementRepository;
+import com.edifika.communication.communication.infrastructure.persistence.jpa.repositories.AnnouncementReadRepository;
+import com.edifika.communication.communication.infrastructure.persistence.jpa.repositories.AnnouncementRepository;
 import com.edifika.communication.communication.domain.services.CommunicationQueryService;
 import com.edifika.communication.communication.interfaces.rest.resources.AnnouncementMetricsResource;
 import org.springframework.stereotype.Service;

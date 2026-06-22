@@ -1,4 +1,4 @@
-package com.edifika.communication.communication.internal.outbounds;
+package com.edifika.communication.communication.application.internal.outbounds;
 
 public record AnnouncementMetricsResponse(
         Long announcementId,

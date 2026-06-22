@@ -1,9 +1,9 @@
-package com.edifika.communication.communication.internal.commandservices;
+package com.edifika.communication.communication.application.internal.commandservices;
 
 import com.edifika.communication.communication.domain.model.aggregates.Announcement;
 import com.edifika.communication.communication.domain.model.entities.AnnouncementRead;
-import com.edifika.communication.communication.domain.repositories.AnnouncementReadRepository;
-import com.edifika.communication.communication.domain.repositories.AnnouncementRepository;
+import com.edifika.communication.communication.infrastructure.persistence.jpa.repositories.AnnouncementReadRepository;
+import com.edifika.communication.communication.infrastructure.persistence.jpa.repositories.AnnouncementRepository;
 import com.edifika.communication.communication.domain.services.CommunicationCommandService;
 import com.edifika.communication.communication.interfaces.rest.resources.CreateAnnouncementResource;
 import com.edifika.communication.communication.interfaces.rest.resources.MarkAnnouncementAsReadResource;
