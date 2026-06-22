@@ -1,4 +1,4 @@
-package com.edifika.payment.payment.infrastructure.authorization.sfs.services;
+package com.edifika.communication.communication.infrastructure.authorization.sfs.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

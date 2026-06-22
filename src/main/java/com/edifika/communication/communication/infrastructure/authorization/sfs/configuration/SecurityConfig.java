@@ -1,6 +1,6 @@
-package com.edifika.payment.payment.infrastructure.authorization.sfs.configuration;
+package com.edifika.communication.communication.infrastructure.authorization.sfs.configuration;
 
-import com.edifika.payment.payment.infrastructure.authorization.sfs.JwtAuthenticationFilter;
+import com.edifika.communication.communication.infrastructure.authorization.sfs.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -26,14 +26,17 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(
-                                "/swagger-ui/**",
-                                "/swagger-ui.html",
-                                "/v3/api-docs/**",
-                                "/v3/api-docs",
-                                "/v1/api-docs/**",
-                                "/v1/api-docs"
-                        ).permitAll()
+                                .requestMatchers(
+                                        "/swagger-ui/**",
+                                        "/swagger-ui.html",
+                                        "/v3/api-docs/**",
+                                        "/v3/api-docs",
+                                        "/api-docs/**",
+                                        "/api-docs",
+                                        "/swagger-resources/**",
+                                        "/webjars/**"
+                                ).permitAll()
+
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
