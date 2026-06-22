@@ -1,4 +1,4 @@
-package com.edifika.communication.communication.application.internal.queryservices;
+package com.edifika.communication.communication.internal.queryservices;
 
 import com.edifika.communication.communication.domain.model.aggregates.Announcement;
 import com.edifika.communication.communication.domain.repositories.AnnouncementReadRepository;

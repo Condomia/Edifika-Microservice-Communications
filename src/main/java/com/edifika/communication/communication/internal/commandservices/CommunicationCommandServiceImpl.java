@@ -1,8 +1,7 @@
-package com.edifika.communication.communication.application.internal.commandservices;
+package com.edifika.communication.communication.internal.commandservices;
 
 import com.edifika.communication.communication.domain.model.aggregates.Announcement;
 import com.edifika.communication.communication.domain.model.entities.AnnouncementRead;
-import com.edifika.communication.communication.domain.model.valueobjects.AnnouncementStatus;
 import com.edifika.communication.communication.domain.repositories.AnnouncementReadRepository;
 import com.edifika.communication.communication.domain.repositories.AnnouncementRepository;
 import com.edifika.communication.communication.domain.services.CommunicationCommandService;
